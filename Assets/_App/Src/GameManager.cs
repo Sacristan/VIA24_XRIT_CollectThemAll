@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
-    List<Prize> uncollectedToys;
+    List<Toy> uncollectedToys;
 
     bool hasWon = false;
 
@@ -18,10 +18,10 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        uncollectedToys = new(FindObjectsOfType<Prize>());
+        uncollectedToys = new(FindObjectsOfType<Toy>());
     }
 
-    public void CollectedToy(Prize toy)
+    public void CollectedToy(Toy toy)
     {
         if (hasWon) return;
 
