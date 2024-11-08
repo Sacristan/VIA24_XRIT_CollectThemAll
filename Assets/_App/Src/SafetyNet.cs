@@ -6,7 +6,7 @@ public class SafetyNet : MonoBehaviour
     {
         if (other.TryGetComponent(out Toy toy))
         {
-            GameManager.Instance.CollectedToy(toy);
+            toy.Collected();
         }
         else if (other.TryGetComponent(out Player player))
         {

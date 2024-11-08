@@ -131,9 +131,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2807244702817603212, guid: c79bb2624be722643b80ae178d52752c, type: 3}
+      propertyPath: maxPitch
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2807244702817603212, guid: c79bb2624be722643b80ae178d52752c, type: 3}
+      propertyPath: minPitch
+      value: 1.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8017297082724460455, guid: c79bb2624be722643b80ae178d52752c, type: 3}
+      propertyPath: m_Volume
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8017297082724460455, guid: c79bb2624be722643b80ae178d52752c, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 966bfb463aa5fa54095f6973d613a524, type: 3}
     - target: {fileID: 9133336824917173386, guid: c79bb2624be722643b80ae178d52752c, type: 3}
       propertyPath: m_Name
-      value: CowPrize Variant
+      value: CowPrize
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

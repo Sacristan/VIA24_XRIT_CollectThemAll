@@ -131,9 +131,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8017297082724460455, guid: c79bb2624be722643b80ae178d52752c, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 402092128636dd343bb2d3efe14eef51, type: 3}
     - target: {fileID: 9133336824917173386, guid: c79bb2624be722643b80ae178d52752c, type: 3}
       propertyPath: m_Name
-      value: SheepPrize Variant
+      value: SheepPrize
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

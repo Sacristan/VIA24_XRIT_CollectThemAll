@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     List<Toy> uncollectedToys;
 
+    [SerializeField] float restartGameTime = 5f;
+
     bool hasWon = false;
 
     void Awake()
@@ -37,7 +39,7 @@ public class GameManager : MonoBehaviour
     {
         hasWon = true;
         Debug.Log(nameof(Victory));
-        Invoke(nameof(RestartGame), 3f);
+        Invoke(nameof(RestartGame), restartGameTime);
     }
 
     void RestartGame()

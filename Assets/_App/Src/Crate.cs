@@ -9,7 +9,7 @@ public class Crate : MonoBehaviour
         {
             Debug.Log("Collected: " + toy.gameObject.name);
 
-            GameManager.Instance.CollectedToy(toy);
+            toy.Collected();
         }
     }
 
