@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    internal UnityEvent OnGameWon = new();
     public static GameManager Instance { get; private set; }
     List<Toy> uncollectedToys;
 
@@ -40,6 +42,7 @@ public class GameManager : MonoBehaviour
         hasWon = true;
         Debug.Log(nameof(Victory));
         Invoke(nameof(RestartGame), restartGameTime);
+        OnGameWon?.Invoke();
     }
 
     void RestartGame()
