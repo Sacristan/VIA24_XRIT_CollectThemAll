@@ -5,9 +5,11 @@ public class Crate : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out Prize prize))
+        if (other.TryGetComponent(out Prize toy))
         {
-            Debug.Log("Collected: " + prize.gameObject.name);
+            Debug.Log("Collected: " + toy.gameObject.name);
+
+            GameManager.Instance.CollectedToy(toy);
         }
     }
 
